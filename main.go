@@ -1,18 +1,15 @@
 package main
 
-import (
-	"fmt"
-)
+import "fmt"
 
-var jobs [2]job
+var jobs []Job
 
 func main() {
 
-	jobs[0] = job{Id: "1", Company: "Amazon", Location: "Boston"}
-	jobs[1] = job{Id: "2", Company: "Apple", Location: "Mountain View"}
+	jobs = append(jobs, Job{Id: "1", Company: "Amazon", Location: "Boston"})
+	jobs = append(jobs, Job{Id: "2", Company: "Apple", Location: "Mountain View"})
 
-	fmt.Println("Hello World!")
-
+	fmt.Println("Starting Server...")
 	runJobController()
 
 }

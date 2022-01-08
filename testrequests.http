@@ -1,0 +1,24 @@
+### CREATE JOB
+POST localhost:8000/api/jobs
+Content-Type: application/json
+
+{
+  "id": "5",
+  "company": "Google",
+  "location": "Boulder, CO"
+}
+
+### DELETE JOB
+
+DELETE localhost:8000/api/jobs/1
+
+
+### UPDATE JOB
+PUT localhost:8000/api/jobs/1
+Content-Type: application/json
+
+{
+  "id": "5",
+  "company": "Google",
+  "location": "Boulder, CO"
+}
